@@ -17,6 +17,5 @@ resource VNet 'Microsoft.Network/virtualNetworks@2021-03-01' = {
       addressPrefix: '10.0.1.0/24'
     }
   }]
-
 }
   
