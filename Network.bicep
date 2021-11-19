@@ -18,8 +18,7 @@ resource virtualNetwork 'Microsoft.Network/virtualNetworks@2019-11-01' = {
         name: 'Subnet-2'
         properties: {
           addressPrefix: '10.0.1.0/24'
-          networkSecurityGroup: nsg.id == '' ? null : {
-            id: nsgId
+          networkSecurityGroup: nsg.id == nsg01
           } 
         }
       }
