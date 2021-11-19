@@ -17,8 +17,8 @@ jobs:
     - name: deploy
       uses: azure/arm-deploy@v1
       with:
-        subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-        resourceGroupName: ${cloudauto}
+        subscriptionId: 71664020-41cc-4258-90ab-c777103ed3a1
+        resourceGroupName: cloudauto
         template: ./azuredeploy.bicep
         parameters: storagePrefix=mystore
         failOnStdErr: false
