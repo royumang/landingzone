@@ -3,20 +3,19 @@ resource VNet 'Microsoft.Network/virtualNetworks@2021-03-01' = {
   location: resourceGroup().location
   properties: {
       addressSpace: {
-        addressPrefix: ['10.0.0.0/16'
-      ]
+        addressPrefix: ['10.0.0.0/16']
       }
-  }
   Subnets: [{
     name: 'SNet-01'
     properties: {
       addressPrefix: '10.0.0.0/24'
     }
     name: 'SNet-02'
-    properties:{
+    properties: {
       addressPrefix: '10.0.1.0/24'
     }
   }
 ]
+}
 }
   
