@@ -1,6 +1,6 @@
 resource VNet 'Microsoft.Network/virtualNetworks@2021-03-01' = {
   name: 'Vnet-01'
-  location: resorceGroup().location
+  location: resourceGroup().location
   properties: {
       addressSpace: {
         addressPrefix: ['10.0.0.0/16'
